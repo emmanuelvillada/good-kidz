@@ -1,10 +1,10 @@
-import logo from './logo.svg';
+import logo from './good kidz.jpg';
 import './App.css';
 import Header from './components/Header.js';
 
 function App() {
   return (
-  <Header logo = ""
+  <Header logo = { logo }
   ></Header>
   );
 }

@@ -1,8 +1,9 @@
-function Header(params) {
+import './Header.css';
+function Header(props) {
     return (
         <header>
             <div className="logo">
-                <img src={logo} alt="logo" />
+                <img src={props.logo} alt="logo" />
             </div>
             <div className="menu">
                 <ul>
