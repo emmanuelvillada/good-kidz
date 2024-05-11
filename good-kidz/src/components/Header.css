@@ -1,10 +1,18 @@
+:root{
+--Verdeprincipal: #B2FF59;
+--Verde-más-oscuro: #7BC041;
+--Amarillosuave: #FFF176;
+--Blanco: #FFFFFF;
+--Grisclaro: #E0E0E0;
+}
+
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #98FF98;
+    background-color: var(--Verdeprincipal);
     color: white;   
 }
 
@@ -21,7 +29,7 @@ img {
     align-items: flex-start;
     list-style-type: none;
     padding: 10px;
-    background-color: #98FF98;
+    background-color: var(--Verdeprincipal);
     color: white;
 }
 
@@ -29,7 +37,7 @@ img {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
-    background-color: #98FF98;
+    background-color: var(--Verdeprincipal);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -39,27 +47,14 @@ img {
     
 }
 
-input[type="search"]{
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
+
 button {
     width: 100%;
     padding: 10px;
     margin: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #98FF98;
+    background-color: var(--Verdeprincipal);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -69,17 +64,7 @@ button {
 }
 
 .menu ul li:hover{
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-input[type="search"]:hover{
-    background-color: #98FF98;
+    background-color: var(--Verde-más-oscuro);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -89,7 +74,7 @@ input[type="search"]:hover{
 }
 
 button:hover{
-    background-color: #98FF98;
+    background-color: var(--Verde-más-oscuro);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -99,7 +84,7 @@ button:hover{
 }
 
 .menu ul li:active{
-    background-color: #98FF98;
+    background-color: var(--Verde-más-oscuro);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -108,18 +93,9 @@ button:hover{
     text-decoration: none;
 }
 
-input[type="search"]:active{
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
 
 button:active{
-    background-color: #98FF98;
+    background-color: var(--Verde-más-oscuro);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -129,17 +105,7 @@ button:active{
 }
 
 .menu ul li:focus{
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-input[type="search"]:focus{
-    background-color: #98FF98;
+    background-color: var(--Verde-más-oscuro);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -149,35 +115,7 @@ input[type="search"]:focus{
 }
 
 button:focus{
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-.search {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    list-style-type: none;
-    padding: 10px;
-    background-color: #98FF98;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.search input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #98FF98;
+    background-color: var(--Verde-más-oscuro);
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -186,67 +124,13 @@ button:focus{
     text-decoration: none;
 }
 
-.search button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.search input:hover {
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.search button:hover {
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.search input:active {
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.search button:active {
-    background-color: #98FF98;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.5s;
-    text-decoration: none;
-}
 .login {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     list-style-type: none;
     padding: 10px;
-    background-color: #98FF98;
+    background-color: var(--Amarillosuave);
     color: white;
     align-items: center;
     justify-content: center;

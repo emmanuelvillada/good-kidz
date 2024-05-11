@@ -8,11 +8,10 @@ function Footer(props) {
                 <img src={props.logo} alt="logo" />
             </div>
             <div className='text-container'>
-                <p>Copyright &copy; 2021</p>
+                <p>Copyright &copy; 2024</p>
                 <p>Good Kidz</p>
                 <p>All Rights Reserved</p>
                 <p>Privacy Policy</p>
-                <p>Terms of Use</p>
                 <a href = "www.instagram.com"><p>Contact Us</p></a>
             </div>
         </footer>

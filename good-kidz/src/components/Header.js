@@ -12,14 +12,10 @@ function Header(props) {
                     <li>Contact</li>
                 </ul>
             </div>
-            <div className="search">
-                <input type="text" placeholder="Search" />
-                <button>Search</button>
-            </div>
-            <div className="login">
+            {/* <div className="login">
                 <button>Login</button>
                 <button>Sign Up</button>
-            </div>
+            </div> */}
             
         </header>
 
