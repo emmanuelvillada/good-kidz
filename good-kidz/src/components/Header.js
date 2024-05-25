@@ -1,4 +1,6 @@
 import './Header.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 function Header(props) {
     return (
         <header>
@@ -7,18 +9,19 @@ function Header(props) {
             </div>
             <div className="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/events">Events</Link></li>
+                    <li><Link to="/create-event">Create Event</Link></li>
                 </ul>
             </div>
             {/* <div className="login">
                 <button>Login</button>
                 <button>Sign Up</button>
             </div> */}
-            
+
         </header>
 
     )
 }
-export default  Header;
+export default Header;
