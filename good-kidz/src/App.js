@@ -1,5 +1,4 @@
 import goodKidzImage from './images/good kidz.jpg';
-import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
 import React from 'react';
@@ -8,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Events from './pages/Events';
 import CreateEvent from './pages/CreateEvent';
+
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/create-event" element={<CreateEvent />} />
         </Routes>
-        <Footer />
+        <Footer  logo={goodKidzImage}/>
       </div>
     </Router>
   );

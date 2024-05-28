@@ -1,9 +1,9 @@
-import './Header.css';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 function Header(props) {
     return (
-        <header>
+        <nav>
             <div className="logo">
                 <img src={props.logo} alt="logo" />
             </div>
@@ -20,7 +20,7 @@ function Header(props) {
                 <button>Sign Up</button>
             </div> */}
 
-        </header>
+        </nav>
 
     )
 }

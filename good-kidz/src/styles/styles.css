@@ -1,0 +1,161 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1, h2, h3 {
+  color: #333;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #ff5733; /* Usando un color vibrante del logo */
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #4CAF50;
+}
+
+/* Header styles */
+header {
+  background-color: #ffcc00; /* Usando un color del logo */
+  color: black;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid #ff5733;
+}
+
+header img {
+  max-width: 150px; /* Ajuste del tamaño del logo */
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  margin-top: 0;
+}
+
+/* Section styles */
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  background-color: #f9f9f9;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid #4CAF50;
+  border-radius: 8px;
+}
+
+section ul li h3 {
+  margin-top: 0;
+}
+
+section ul li p {
+  margin: 0.5rem 0;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #ff5733;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.img-container img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text-container p {
+  margin: 0.5rem 0;
+}
+
+.text-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.text-container ul li {
+  margin: 0;
+}
+
+.text-container ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.text-container ul li a:hover {
+  color: #4CAF50;
+}
