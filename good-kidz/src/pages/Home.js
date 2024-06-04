@@ -9,17 +9,26 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="container">
+      <div className="video-background">
+        <video autoPlay loop muted>
+          <source src="https://www.videvo.net/videvo_files/converted/2021_02/videos/210203_01_Aerial_Circle_4k_004.mp4" type="video/mp4" />
+        </video>
+      </div>
+
       <header>
-        <img src={logo} alt="Good Kidz logo" />
+        <div className="logo">
+          <img src={logo} alt="Good Kidz logo" />
+        </div>
         <h1>Welcome to Good Kidz</h1>
         <p>Good Kidz is dedicated to helping children develop and thrive through various community programs and events.</p>
       </header>
-      <section>
+
+      <section className="events-section">
         <h2>Upcoming Events</h2>
-        <ul>
+        <ul className="events-list">
           {events.map(event => (
-            <li key={event.id}>
+            <li key={event.id} className="event-card">
               <h3>{event.name}</h3>
               <p>Date: {event.date}</p>
               <p>{event.description}</p>
@@ -27,6 +36,9 @@ const Home = () => {
           ))}
         </ul>
       </section>
+      
+      <button className="btn btn-primary">Join Now</button>
+      
     </div>
   );
 };

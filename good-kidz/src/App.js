@@ -1,28 +1,19 @@
-import goodKidzImage from './images/good kidz.jpg';
-import Header from './components/Header.js';
-import Footer from './components/Footer.js';
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Events from './pages/Events';
-import CreateEvent from './pages/CreateEvent';
-
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx'; // Asegúrate de que la ruta sea correcta
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Header logo = {goodKidzImage} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/create-event" element={<CreateEvent />} />
-        </Routes>
-        <Footer  logo={goodKidzImage}/>
-      </div>
+      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Otras rutas */}
+      </Routes>
+      <Footer></Footer>
     </Router>
   );
 }
