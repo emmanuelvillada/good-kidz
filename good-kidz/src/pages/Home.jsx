@@ -4,6 +4,7 @@ import { Card, CardContent } from '../components/ui/card'; // Ajusta la ruta si 
 import { CalendarIcon, ClockIcon } from './icons';
 import goodkidzimg from '../images/good kidz.jpg';
 
+
 export default function Component() {
     const events = [
         { id: 1, name: 'Community Cleanup', date: '2024-06-10', description: 'Join us for a community cleanup event to keep our parks clean.', hour: '6:00 PM - 9:00 PM' },
@@ -14,7 +15,7 @@ export default function Component() {
         { id: 1, name: 'Community Cleanup', date: '2024-06-10', description: 'Join us for a community cleanup event to keep our parks clean.', hour: '6:00 PM - 9:00 PM' },
         { id: 2, name: 'Summer Camp', date: '2024-07-15', description: 'A fun and educational summer camp for kids aged 5-12.', hour: '6:00 PM - 9:00 PM' },
         { id: 3, name: 'Fundraising Gala', date: '2024-09-20', description: 'An evening of dining and entertainment to support our programs.', hour: '6:00 PM - 9:00 PM' },
-        {id: 4, name: 'Fundraising Gala', date: '2024-09-20',  description: 'An evening of dining and entertainment to support our programs.', hour: '6:00 PM - 9:00 PM' },
+        { id: 4, name: 'Fundraising Gala', date: '2024-09-20', description: 'An evening of dining and entertainment to support our programs.', hour: '6:00 PM - 9:00 PM' },
     ];
     return (
         <div className="flex flex-col min-h-[100dvh]">
@@ -32,13 +33,13 @@ export default function Component() {
                                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                                     <Link
                                         to="#"
-                                        className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                                        className="btn btn-primary"
                                     >
                                         Upcoming Events
                                     </Link>
                                     <Link
                                         to="#"
-                                        className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
+                                        className="btn btn-secondary"
                                     >
                                         View Gallery
                                     </Link>
@@ -110,11 +111,13 @@ export default function Component() {
                         </div>
                         <div className="mx-auto grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                             {past_events.map(event =>
-                                <img width="300"
+                                <img
+                                    key={event.id}
+                                    width="300"
                                     height="300"
                                     className="mx-auto aspect-square overflow-hidden rounded-xl object-cover" src={goodkidzimg} alt={event.name} />
                             )}
-                            
+
                         </div>
                     </div>
                 </section>
@@ -153,9 +156,8 @@ export default function Component() {
                                         art experiences to our neighborhood. Get to know the individuals behind Good Kidz.
                                     </p>
                                     <Link
-                                        href="#"
-                                        className="inline-flex h-9 items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-
+                                        to="#"
+                                        className="btn btn-primary"
                                     >
                                         Meet the Team
                                     </Link>
@@ -164,20 +166,6 @@ export default function Component() {
                         </div>
                     </div>
                 </section>
-                <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-                    <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
-                        <div className="space-y-3">
-                            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Get in Touch</h2>
-                            <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                                Have a question, feedback, or want to collaborate? We'd love to hear from you.
-                            </p>
-                        </div>
-                        <div className="mx-auto w-full max-w-sm space-y-2">
-                            <form className="flex space-x" />
-                        </div>
-                    </div>
-                </section>
-
             </main>
         </div>
     );
