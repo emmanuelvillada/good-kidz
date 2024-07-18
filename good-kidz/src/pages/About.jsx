@@ -22,7 +22,7 @@ export default function About() {
                                 width="600"
                                 height="600"
                                 alt="About Good Kidz"
-                                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full"
+                                className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full hover:"
                             />
                         </div>
                     </div>
