@@ -21,8 +21,9 @@ export default function Footer() {
                         </Link>
                         <Link to="#" className="text-gray-50 hover:text-gray-200">
                             <span className="sr-only">Twitter</span>
-                            <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.953 4.569c-.885.39-1.83.654-2.825.774 1.014-.608 1.794-1.57 2.163-2.724-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.558-3.594-1.558-2.719 0-4.924 2.207-4.924 4.924 0 .39.045.765.127 1.124-4.092-.205-7.719-2.165-10.148-5.144-.422.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.025-1.566-.247-2.229-.616v.06c0 2.385 1.693 4.374 3.946 4.828-.413.112-.847.171-1.296.171-.317 0-.623-.03-.923-.085.631 1.954 2.445 3.377 4.604 3.419-1.68 1.32-3.809 2.104-6.102 2.104-.396 0-.788-.023-1.175-.068 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14-7.497 14-13.985 0-.21 0-.423-.015-.633.961-.693 1.8-1.562 2.462-2.549z"/>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </Link>
                         <Link to="#" className="text-gray-50 hover:text-gray-200">
