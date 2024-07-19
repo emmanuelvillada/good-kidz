@@ -5,6 +5,7 @@ import Home from './pages/Home.jsx'; // Asegúrate de que la ruta sea correcta
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About.jsx';
+import Register from './pages/Register.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* Otras rutas */}
         <Route path="/about" element={<About />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer></Footer>
     </Router>
