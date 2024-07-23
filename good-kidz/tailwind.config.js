@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'class', // Opción recomendada: usa la clase `dark` para habilitar el modo oscuro
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'], // Añade la nueva fuente aquí
+      },
+    },
   },
   variants: {
     extend: {},

@@ -66,8 +66,12 @@ const Register = () => {
                                         required
                                     >
                                         <option value="Medellin">Medellín</option>
-                                        <option value="Medellin">Sabaneta</option>
-                                        <option value="Medellin">Bello</option>
+                                        <option value="Sabaneta">Sabaneta</option>
+                                        <option value="Bello">Bello</option>
+                                        <option value="Envigado">Envigado</option>
+                                        <option value="Itagui">Itagui</option>
+                                        <option value="La Estrella">La Estrella</option>
+                                        <option value="Copacabana">Copacabana</option>
                                     </select>
                                 </div>
                                 <div className="flex items-start">
