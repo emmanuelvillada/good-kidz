@@ -5,6 +5,7 @@ import redFaceImg from '../images/BUDDY_STAR.gif'; // Ruta a la imagen de la car
 
 const Register = () => {
     return (
+        
         <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
             <div className="container mx-auto px-4 md:px-6 py-12">
                 <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-xl shadow-md flex flex-col md:flex-row items-center">
